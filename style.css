@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game{
+    margin: auto auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+#background__img{
+    position: absolute;
+    z-index: -10;
+    width: 500px;
+    height: 250px;
+}
+
+#character{
+    height: 50px;
+    position: relative;
+    left: 100px;
+    top: 200px;
+}
+
+#fire {
+    height: 20px;
+    position: relative;
+    top: 200px;
+    left: 380px;
+    animation: fire 2s infinite linear;
+}
+
+@keyframes fire{
+    100% { left: -50px; }
+}
+
+@keyframes jump {
+    0%{top: 200px;}
+    30%{top: 140px;}
+    70%{top: 145px;}
+    100%{top: 200px;}
+}
+
+.animate {
+    animation: jump 1s linear;
+}
+
+#text1 {
+    position: absolute;
+    margin-left: 140px;
+    font-size: 1.5rem;
+    color: darkblue;
+    font-weight: bold;
+}
+
+#score{
+    position: absolute;
+    font-size: 1.5rem;
+    color:blue;
+}

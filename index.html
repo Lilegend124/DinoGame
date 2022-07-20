@@ -1,0 +1,22 @@
+<!-- game tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ&ab_channel=KnifeCircus -->
+<!DOCTYPE html>
+<!-- anykeypressed to trigger jump() -->
+<html onkeypress="jump()">
+<head>
+    <meta charset = "UTF-8">
+    <title>Dino Game</title>
+    <link rel='stylesheet' href='style.css'>
+    
+</head>
+<body>
+    <div id="game">
+        <!-- sprite sources: https://spritedatabase.net/game/2232 -->
+        <img src="pic/background.png" alt="background" id="background__img">
+        <div id="text1">Press any key to jump</div>
+        <p id="score">0</p>
+        <img src = "pic/character.gif" alt="character" id="character">
+        <img src = "pic/fire.gif" alt="fire" id="fire">
+    </div>
+</body>
+<script src='script.js'></script>
+</html>
