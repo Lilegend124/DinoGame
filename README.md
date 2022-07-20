@@ -1,2 +1,3 @@
 # DinoGame
-A mimic of the popular chrome dino game
+A mimic of the popular chrome dino game <br>
+Game Tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ&ab_channel=KnifeCircus
