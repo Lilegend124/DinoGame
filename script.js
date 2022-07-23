@@ -37,4 +37,6 @@ setInterval(function(){
     score.textContent = +score.textContent + 1;
 }, 2000);
 
-
+document.addEventListener("keydown", function() {
+    document.getElementById('audio').play();
+});
