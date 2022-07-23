@@ -38,5 +38,6 @@ setInterval(function(){
 }, 2000);
 
 document.addEventListener("keydown", function() {
+    document.getElementById('audio').volume = 0.5;
     document.getElementById('audio').play();
 });
