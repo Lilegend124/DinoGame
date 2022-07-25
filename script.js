@@ -6,8 +6,11 @@ const score = document.getElementById("score");
 // jump animation, keypress will trigger it in html file
 function jump(){
     if (character.classList.contains("animate")){return}
-    
+
+    document.getElementById('audio').volume = 0.2;
     character.classList.add("animate");
+    document.getElementById('audio').play();
+
     // Removes "animate" 1 second after
     // become jump animation takes 1 second
     setTimeout(function() {
@@ -37,7 +40,7 @@ setInterval(function(){
     score.textContent = +score.textContent + 1;
 }, 2000);
 
-document.addEventListener("keydown", function() {
-    document.getElementById('audio').volume = 0.5;
-    document.getElementById('audio').play();
-});
+// document.addEventListener("keydown", function() {
+//     document.getElementById('audio').volume = 0.5;
+//     document.getElementById('audio').play();
+// });
